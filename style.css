@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Marcellus&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f5f6;
+}
+
+
+header{
+    background-color: #262727;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+header section{
+    padding: 10px;
+    color: #747474;
+}
+header section span{
+    color: #ffe500;
+
+}
+header section:nth-child(3){
+    color: #ffe500;
+    padding: 10px;
+    border-right: 1px solid #747474;
+    border-left: 1px solid #747474;
+}
+
+/*navbar */
+.nav-item{
+    background-color: #ffe500;
+    margin: 0 8px;
+    padding:0 4px;
+}
+.arrow{
+    position: absolute;
+    top: 22px;
+}
+
+/**first image*/
+.first{
+    width: 100%;
+    height: 530px;
+    background-image: url('./images/4_6024068189602711673.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first section:nth-child(1){
+    color:#ffe500;
+    font-size: 110px;
+    font-family: 'Corinthia', cursive;
+    position: relative;
+    top: 30px;
+}
+.first section:nth-child(2){
+    color: white;
+    font-size: 60px;
+    font-family:'Marcellus', serif;
+    position: relative;
+    bottom: 30px;
+}
+.first section:nth-child(3){
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 30px;
+}
+.first button{
+    appearance: none;
+    border: none;
+    background-color: #ffe500; 
+    padding: 20px;
+}
+.spacer{
+    height: 140px;
+}
+
+/*hanging div*/
+.hanging-div{
+    width: 96%;
+    position: absolute;
+    bottom: -12%;
+    padding:40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px ;
+}
+.hanging-div button{
+    appearance: none;
+    border: none;
+    color: white;
+    background-color: #000000; 
+    padding:18px 20px;
+}
+.hr1{
+    height: 1px;
+    background-color:black;
+}
+
+/*finest luxury*/
+.second{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+.left{
+    padding: 10px 50px 0 0;
+}
+h2{
+    font-size: 50px;
+}
+.left p{
+    line-height: 30px;
+}
+.left button{
+    appearance: none;
+    border: none;
+    background-color: #ffe500; 
+    padding:14px 30px;
+}
+.right{
+}
+
+/*eatured special*/
+.third{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.third-pics{
+    width: inherit;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+}
+.third-pics div{
+    width: 360px;
+    height: 610px;background-image: url('./images/2_5231190430460152392.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+}
+.third-pics div h2{
+    font-size: 36px ;
+}
+.third-pics div:nth-child(1){
+    margin-bottom: 120px;
+}
+.third-pics div:nth-child(2){
+    margin-top: 120px;
+    height: auto;
+} 
+.third-pics div:nth-child(3){
+    margin-bottom: 120px;
+}
+.third-pics button{
+    margin: 26px 0;
+    padding: 14px 29px ;
+    background-color: yellow;
+    appearance: none;
+    border: none;
+}
+
+
+/*facilities and services*/
+.services{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+}
+.services-l{
+    width: 30%;
+    margin-top: 100px;
+}
+.services-r{
+    width: 70%;
+    display: flex;
+}
+
+
+/*reasons*/
+.reasons{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+}
+.reasons-l{
+    width: 62%;
+}
+
+.reasons-r{
+    width: 38%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.reasons-r button{
+    width: fit-content;
+    appearance: none;
+    border: none;
+    background-color: #ffe500; 
+    padding:14px 30px;
+}
+
+/*rooms and suits*/
+.rooms{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+/*iframe*/
+.frame{
+    width: 100%;
+    height: 615px;
+    background-image: url('./images/4_6024068189602711673.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+
+}
+.frame div i{
+    font-size: 65px;
+}
+
+iframe{
+    
+}
+a{
+    appearance: none;
+    color: white;
+}
+a:hover{
+    color: yellow;
+}
+
+/*restaurants and bars*/
+
+.divider{
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    background-color: white;
+}
+
+/*testimonials */
+.testimonials {
+    margin-top: 130px;
+}
+.testimonials div i{
+    color: #ebcfa5;
+}
+
+/*nearby*/
+.nearby{
+    width: 96%;
+    margin: 80px auto;
+    background-color: white;
+}
+.nearby2nd{
+    padding: 70px;
+}
+
+/*articles*/
+.rooms{
+    margin-top: 150px;
+}
+.black-btn{
+    appearance: none;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.yellow-btn{
+    appearance: none;
+    border: none;
+    background-color: yellow;
+}
+
+/*footer*/
+footer{
+    background-color: #262727;
+    margin-top: 110px !important;
+}
+.inputs input{
+    width: 330px;
+    padding: 14px;
+    font-size: 14px;
+}
+.inputs button{
+    appearance: none;
+    border: none;
+    background-color: #ffe500;
+    padding:14px 30px;
+}
+
+.hr{
+    background-color: #747474;
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.last{
+    width: 90%;
+    padding:70px 50px;
+}
+
+.copyright{
+    padding:30px 0 40px 0;
+    color: #747474;
+}
+
+
+/*fonts and colors*/
+h2{
+    font-family:'Marcellus', serif;
+}
+p{
+    color: #747474;
+}
+.mini-heading{
+    font-family:'Marcellus', serif;
+    color: #747474;
+}
+
+.dot{
+    border: none;
+    border-top: 2px dotted #747474;
+    height: 5px;
+    width: 30px;
+}
+.dot-container{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.yellow{
+    color:yellow;
+    font-family:'Marcellus', serif ;
+}
+.thin{
+    font-size: 14px;
+    font-weight: 400;
+    color: #747474;
+}
+.marcellus{
+    font-family:'Marcellus', serif ;
+}
