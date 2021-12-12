@@ -44,8 +44,9 @@ header section:nth-child(3){
 .first{
     width: 100%;
     height: 530px;
-    background-image: url('./images/4_6024068189602711673.jpg');
+    background: url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -241,7 +242,7 @@ h2{
 .frame{
     width: 100%;
     height: 615px;
-    background-image: url('./images/4_6024068189602711673.jpg');
+    background: url('https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-attachment: fixed;
     display: flex;
