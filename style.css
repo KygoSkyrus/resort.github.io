@@ -698,6 +698,9 @@ p{
 .c-c p{
     display: none;
 }
+.c-c h2{
+    font-size: 20px !important;
+}
 .reasons-r h2{
     text-align: center;
 }
