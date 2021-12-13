@@ -129,7 +129,7 @@ header section:nth-child(3):hover{
 .first section:nth-child(3){
     color: white;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Marcellus', serif;
     position: relative;
     bottom: 160px; 
 }
@@ -542,6 +542,21 @@ p{
     header section:nth-child(2){
         display: none;
     }
+
+    /*first*/
+.first{
+    padding: 0;
+}
+.first section:nth-child(1){
+    font-size: 100px;
+}
+.first section:nth-child(2){
+    font-size: 28px;
+}
+.first section:nth-child(3){
+    font-size: 16px;
+}
+
 
 .spacer{
     height: 220px;
