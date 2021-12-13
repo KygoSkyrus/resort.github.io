@@ -512,6 +512,14 @@ p{
     font-weight: 400;
     color: #747474;
 }
+.light-color{
+    color: #747474;
+}
+.light-color span{
+    color: black;
+    font-size: 24px;
+    font-family: "marcellus";
+}
 .marcellus{
     font-family:'Marcellus', serif ;
 }
@@ -619,6 +627,7 @@ p{
     margin-bottom:0px ;
     position: relative;
     bottom: 240px;
+
 }
 
 
@@ -671,11 +680,23 @@ p{
     margin-bottom: 30px;
 }
 
+.c-c p{
+    display: none;
+}
+.reasons-r h2{
+    text-align: center;
+}
+
 /*rooms*/
 .rooms{
     margin-top: 90px;
 }
 
+
+/*frame*/
+.frame-div{
+    width: 100% !important;
+}
 
 
 /*restaurants and bars*/
@@ -696,6 +717,7 @@ p{
 /*testimonials */
 .testimonials {
     margin-top: 90px;
+    text-align: center;
 }
 
 
@@ -713,6 +735,7 @@ p{
 .nearby2nd{
     width: 100% !important;
     text-align: center;
+    padding:30px 20px;
 }
 .nearby-places{
     flex-direction: column;
