@@ -161,7 +161,7 @@ header section:nth-child(3):hover{
     margin: 0 auto;
     background-color: white;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px ;
+    box-shadow: 0 0 10px #bdbdbd;
     z-index: 10;
 }
 .hanging-div button{
@@ -183,7 +183,8 @@ header section:nth-child(3):hover{
     margin-top: 130px;
 }
 .left{
-    padding: 10px 50px 0 0;
+    width: 50%;
+    padding: 10px 40px 0 0;
 }
 h2{
     font-size: 50px;
@@ -198,7 +199,41 @@ h2{
     padding:14px 30px;
 }
 .right{
+    width: 50%;
 }
+.container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "box1 box2 "
+      "box1 box3 "
+      ;
+  }
+  
+.box1 { 
+    grid-area: box1; 
+    background: url("./images/2_5231190430460152392.jpg");
+    background-size: cover;
+}
+  
+.box2 {
+    grid-area: box2; 
+    background: url("./images/2_5231190430460152392.jpg");
+    background-size: cover;
+
+}
+.box3 {
+    grid-area: box3; 
+    background: url("./images/2_5231190430460152392.jpg");
+    background-size: cover;
+
+}
+
+  
+
 
 /*featured special*/
 .third{
@@ -218,47 +253,55 @@ h2{
     width: 360px;
     overflow: hidden; 
     box-sizing: border-box;
+    position: relative;
 }
 .one img{
     width: 100%;
 }
 
+
+.oneone1{
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+.oneone{
+    position: absolute;
+    bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
 .one:hover img{
     transform: scale(1.2);
     transition: all 500ms;
 }
 
-.third-pics .one section{
-    position: relative;
-    bottom: 26%;
-    display: flex;
-    justify-content: center;
-}
+
 .third-pics div h2{
     font-size: 36px ;
-    position: relative;
-    bottom: 26%;
-    padding: 0 20px;
 }
 
 .third-pics div:nth-child(1){
+    margin-bottom:20px ;
 }
-.third-pics div:nth-child(2){
-    margin-top: 120px;
-    height: auto;
+.third-pics .one:nth-child(2){
+    margin-top: 110px;
 } 
 .third-pics div:nth-child(3){
-}
-.onePointone{
-    position: absolute;
-    top: -26%;
+    margin-bottom:20px ;
 }
 .one div button{
     padding: 14px 29px ;
+    font :14px 'Marcellus';
     background-color: #ffe500;
     appearance: none;
     border: none;
-}
+} 
 
 
 
@@ -277,6 +320,7 @@ h2{
     width: 70%;
     display: flex;
 }
+
 
 
 /*reasons*/
@@ -353,8 +397,9 @@ a:hover{
     color: yellow;
 }
 
-/*restaurants and bars*/
 
+
+/*restaurants and bars*/
 .divider{
     width: 6px;
     height: 100%;
@@ -379,6 +424,9 @@ a:hover{
 }
 .nearby2nd{
     padding: 70px;
+}
+.nearby-places{
+    margin: 15px 0;
 }
 
 /*articles*/
@@ -470,5 +518,251 @@ p{
 
 .on-hover-yellow:hover{
     color: yellow;
+
+}
+
+
+/*responsive*/
+@media (max-width:766px){
+
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    header section:nth-child(3),
+    header section:nth-child(2){
+        display: none;
+    }
+
+.spacer{
+    height: 220px;
+}
+    
+ /*hanging div*/
+.hanging-div{
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    padding:20px 18px;
+    flex-direction: column;
+}
+.hanging-div .features{
+    width: 100% !important;
+    margin: 15px 0 5px 0;
+}
+.hanging-div div:nth-child(2) {
+    width: 100% !important;
+    margin: 15px 0 5px 0;
+}
+.hanging-div div:nth-child(3) {
+    width: 100% !important;
+    margin: 15px 0 5px 0;
+}
+.hanging-div button{
+    width: 100%;
+}
+.hr1{
+   margin-top: 10px ;
+}
+
+
+/*second*/
+.second{
+    flex-direction: column;
+    margin-top: 90px;
+}
+.left{
+    width: 100%;
+    padding: 0 0;
+    }
+.right{
+    width: 100%;
+    height: 420px;
+    margin-top: 40px;
+}
+
+
+
+/*featured special*/
+.third{
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.third-pics{
+    flex-direction: column;
+}
+.one{
+    width: 100%;
+    height: 100vh;
+}
+.one img{
+    height: 80%;
+}
+
+.oneone1{
+    bottom: 180px;
+}
+.oneone{
+    bottom: 230px;
+}
+
+.third-pics div:nth-child(1){
+    margin-bottom:0px ;
+}
+.third-pics .one:nth-child(2){
+    margin-top: 0px;
+    position: relative;
+    bottom: 120px;
+} 
+.third-pics div:nth-child(3){
+    margin-bottom:0px ;
+    position: relative;
+    bottom: 240px;
+}
+
+
+/*facilities and services*/
+.services{
+    /* width: 95%; */
+    flex-direction: column;
+    align-items: center;
+}
+.services-l{
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+}
+.dots-in-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-r{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.service-icon{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/*reasons*/
+.reasons{
+    margin-top: 90px;
+    flex-direction: column-reverse;
+}
+.reasons-l{
+    width: 96%;
+    margin: 0 auto;
+}
+.reasons-r{
+    width: 96%;
+    padding-left: 0px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/*rooms*/
+.rooms{
+    margin-top: 90px;
+}
+
+
+
+/*restaurants and bars*/
+.left{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.rb-pic{
+    width: 96% !important;
+    margin:30px auto 0  auto;
+}
+
+
+
+/*testimonials */
+.testimonials {
+    margin-top: 90px;
+}
+
+
+
+/*nearby*/
+.nearby{
+    flex-direction: column;
+}
+.nearby h2{
+    margin-bottom: 30px !important;
+}
+.nearby-pic{
+    width: 100% !important;
+}
+.nearby2nd{
+    width: 100% !important;
+    text-align: center;
+}
+.nearby-places{
+    flex-direction: column;
+    margin: 0 !important;
+}
+.nearby-places div{
+    margin: 8px;
+}
+.nearby-places div i,
+.nearby-places div section:nth-child(2){
+    color: #747474;
+}
+.nearby-places div section:nth-child(3){
+    font-family: 'Marcellus';
+}
+
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
+.inputs input{
+    width: 96%;
+    margin: 6px 0;
+}
+.inputs button{
+    margin-top: 6px;
+    width: 96%;
+}
+.last{
+    padding:60px 0;
+    flex-direction: column;
+}
+.last div img{
+    margin-bottom: 30px;
+    width: 200px !important;
+}
+.yellow{
+    margin: 0 !important;
+    margin-top: 20px !important;
+}
+
+
+
+/*fonts and colors*/
+h2{
+    font-size: 40px;
+    font-family:'Marcellus', serif;
+}
+
 
 }
