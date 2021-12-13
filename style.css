@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Marcellus&family=Roboto&display=swap');
 
 body{
+    width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -514,6 +516,7 @@ p{
 }
 .light-color{
     color: #747474;
+    font-family: 'Marcellus', serif ;
 }
 .light-color span{
     color: black;
@@ -708,6 +711,9 @@ p{
 /*rooms*/
 .rooms{
     margin-top: 90px;
+}
+.fontSize{
+    font-size: 26px;
 }
 
 
